@@ -4,11 +4,11 @@ name: Stale Branches
 
 on:
   push:
-    branches:
+    branches-ignore:
       - main
       - igBranch
   schedule:
-    - cron: '10 1,15 * * 1-5'
+    - cron: '15 1,15 * * 1-5'
     
 permissions:
   issues: write
